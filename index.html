@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="app">
+<head>
+    <title>All hail King Peter</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="css/jumbotron-narrow.css" />
+</head>
+<body>
+        <div class="container">
+            <div class="header">
+                <ul class="nav nav-pills pull-right">
+                    <li ng-class="{active: home}"><a href="#/">Home</a></li>
+                    <li ng-class="{active: about}"><a href="#/about">About</a></li>
+                    <li ng-class="{active: territory}"><a href="#/territory">Territory</a></li>
+                    <li ng-class="{active: gallery}"><a href="#/gallery">Gallery</a></li>
+                </ul>
+                <h3 class="text-muted">Chicken/Lamb Dynasty</h3>
+            </div>
+
+            <ng-view></ng-view>
+
+        </div>
+        <!-- /container -->
+    
+    <script src="lib/jquery/jquery-1.10.2.js"></script>
+    <script src="lib/bootstrap/bootstrap.min.js"></script>
+    <script src="lib/angular/angular.js"></script>
+    <script src="lib/angular/angular-route.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/controllers/aboutController.js"></script>
+    <script src="js/controllers/homepageController.js"></script>
+    <script src="js/controllers/territoryController.js"></script>
+    <script src="js/controllers/galleryController.js"></script>
+</body>
+</html>
